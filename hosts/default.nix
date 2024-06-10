@@ -4,6 +4,12 @@
   ...
 }@inputs: let
   inherit (self) inputs;
+
+  # modules
+  nvidia = ../modules/nvidia;
+  system = ../modules/system;
+  hmModule = inputs.home-manager.nixosModules.home-manager;
+
   home-manager = {
     useUserPackages = true;
     useGlobalPkgs = true;
@@ -21,9 +27,10 @@ in {
     modules = [
       { networking.hostName = "kaylbox"; }
       ./kaylbox
+      system
+      nvidia
+      hmModule
       { inherit home-manager; }
-      ../modules/system
-      ../modules/nvidia
     ];
     specialArgs = {
       inherit inputs;
