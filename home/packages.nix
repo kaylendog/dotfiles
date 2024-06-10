@@ -4,7 +4,7 @@
     vim
     zsh
   ];
-  
+
   programs.zsh = {
     enable = true;
     enableCompletion = true;
@@ -23,5 +23,5 @@
   };
   
   # https://starship.rs/installing/#nix
-  programs.starship.enable = true
+  programs.starship.enable = true;
 }
