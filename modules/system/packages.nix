@@ -23,10 +23,13 @@
       vim = "nvim";
     };
 
-    plugins = [
-      { name = "marlonrichert/zsh-autocomplete"; }
-      { name = "zsh-users/zsh-syntax-highlighting"; }
-      { name = "zsh-users/zsh-completions"; }
-    ];
+    zplug = {
+      enable = true;      
+      plugins = [
+        { name = "marlonrichert/zsh-autocomplete"; }
+        { name = "zsh-users/zsh-syntax-highlighting"; }
+        { name = "zsh-users/zsh-completions"; }
+      ];
+    };
   };
 }
