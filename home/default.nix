@@ -3,7 +3,7 @@
 }:
 {
   # version
-  config.home.stateVersion = "23.11";
+  config.home.stateVersion = "24.05";
 
   imports = [
     ./packages.nix
