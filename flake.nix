@@ -12,6 +12,6 @@
   };
 
   outputs = { self, nixpkgs, ... }@inputs: {
-    nixosConfigurations = import ./hosts inputs;
+    nixosConfigurations = import ./hosts { inputs; };
   };
 }
