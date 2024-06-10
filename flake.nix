@@ -2,7 +2,7 @@
   description = "the kaylen dog";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos";
+    nixpkgs.url = "github:nixos/nixpkgs/23.11";
 
     # home-manager
     home-manager = {

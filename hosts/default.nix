@@ -14,7 +14,7 @@
     users.kaylen = {
       imports = [../home];
     };
-  }
+  };
 in {
   kaylbox = nixpkgs.lib.nixosSystem {
     system = "x86_64-linux";
