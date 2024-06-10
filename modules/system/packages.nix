@@ -6,5 +6,6 @@
     curl
     btrfs-progs
   ];
+  programs.zsh.enable = true;
   programs.git.enable = true;
 }
