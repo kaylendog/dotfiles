@@ -6,5 +6,5 @@
     git
     curl
     btrfs-progs
-  ]
+  ];
 }

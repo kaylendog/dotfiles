@@ -24,6 +24,6 @@ in {
       { inherit home-manager; }
       ../modules/system
       ../modules/nvidia
-    ]
+    ];
   };
 }
