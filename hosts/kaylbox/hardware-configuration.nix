@@ -12,14 +12,19 @@
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/80ed5a1e-b48c-4d3b-b857-8de4d9672d08";
+    { device = "/dev/disk/by-label/nixos-root";
       fsType = "btrfs";
     };
 
   fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/08EA-810C";
+    { device = "/dev/disk/by-label/BOOT";
       fsType = "vfat";
       options = [ "fmask=0022" "dmask=0022" ];
+    };
+
+  fileSystems."/home" =
+    { device = "/dev/disk/by-label/nixos-home";
+      fsType = "btrfs";
     };
 
   swapDevices = [ ];
