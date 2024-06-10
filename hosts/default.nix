@@ -2,7 +2,7 @@
   nixpkgs,
   self,
   ...
-}: let
+}@inputs: let
   home-manager = {
     useUserPackages = true;
     useGlobalPkgs = true;
