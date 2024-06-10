@@ -3,6 +3,7 @@
   self,
   ...
 }@inputs: let
+  inherit (self) inputs;
   home-manager = {
     useUserPackages = true;
     useGlobalPkgs = true;
@@ -24,5 +25,8 @@ in {
       ../modules/system
       ../modules/nvidia
     ];
+    specialArgs = {
+      inherit inputs;
+    };
   };
 }
