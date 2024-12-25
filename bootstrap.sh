@@ -1,5 +1,5 @@
 function prompt {
-    read -r response -p "$1 [$2]: "
+    read -p "$1 [$2]: " -r response
     if [ -z "$response" ]; then
         response=$2
     fi
