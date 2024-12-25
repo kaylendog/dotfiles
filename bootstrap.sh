@@ -4,13 +4,11 @@ function prompt {
     if [ -z "$response" ]; then
         response=$2
     fi
-    echo $response
+    return $response
 }
 
 function confirm {
-    echo -n "$1 (yes/no)>"
-    read -r response
-    echo $response
+    return prompt "Continue (yes/no)?" "yes"
 }
 
 echo "Kaylen's Dotfiles - Bootstrap Setup"
