@@ -1,6 +1,5 @@
 function prompt {
-    echo -n "$1 (default $2)>"
-    read -r response
+    read -r response -p "$1 [$2]: "
     if [ -z "$response" ]; then
         response=$2
     fi
