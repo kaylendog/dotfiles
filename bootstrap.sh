@@ -7,7 +7,7 @@ function prompt {
 }
 
 function confirm {
-    echo prompt "Continue (yes/no)?" "yes"
+    echo $(prompt "Continue?" "yes")
 }
 
 echo "Kaylen's Dotfiles - Bootstrap Setup"
