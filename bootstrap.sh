@@ -3,7 +3,7 @@ function prompt {
     if [ -z "$response" ]; then
         response=$2
     fi
-    return $response
+    echo $response
 }
 
 function confirm {
