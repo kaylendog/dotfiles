@@ -1,3 +1,5 @@
+set -euo pipefail
+
 function prompt {
     read -p "$1 [$2]: " -r response
     if [ -z "$response" ]; then
